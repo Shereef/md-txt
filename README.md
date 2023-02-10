@@ -6,7 +6,7 @@
 [![npm bundle size](https://img.shields.io/bundlephobia/min/md-txt)](https://www.npmjs.com/package/md-txt)
 [![npm](https://img.shields.io/npm/dt/md-txt)](https://www.npmjs.com/package/md-txt)
 [![npm](https://img.shields.io/npm/dw/md-txt)](https://www.npmjs.com/package/md-txt)
-[![npm](https://img.shields.io/npm/v/nd-txt)](https://www.npmjs.com/package/md-txt)
+[![npm](https://img.shields.io/npm/v/md-txt)](https://www.npmjs.com/package/md-txt)
 
 Uses [`markdown-to-txt`](https://github.com/ejrbuss/markdown-to-txt) by [@ejrbuss](https://github.com/ejrbuss) to create a cli that converts markdown to text
 
