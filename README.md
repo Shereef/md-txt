@@ -1,6 +1,6 @@
 # md-txt
 
-Uses `markdown-to-txt` by @ejrbuss to create a cli that converts markdown to text
+Uses [`markdown-to-txt`](https://github.com/ejrbuss/markdown-to-txt) by [@ejrbuss](https://github.com/ejrbuss) to create a cli that converts markdown to text
 
 ```
 	Usage
