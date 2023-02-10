@@ -1,5 +1,13 @@
 # md-txt
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Shereef_md-txt)](https://sonarcloud.io/summary/new_code?id=Shereef_md-txt)
+
+[![main](https://github.com/Shereef/md-txt/actions/workflows/on-main-updated.yml/badge.svg)](https://github.com/Shereef/md-txt/actions/workflows/on-main-updated.yml)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/md-txt)](https://www.npmjs.com/package/md-txt)
+[![npm](https://img.shields.io/npm/dt/md-txt)](https://www.npmjs.com/package/md-txt)
+[![npm](https://img.shields.io/npm/dw/md-txt)](https://www.npmjs.com/package/md-txt)
+[![npm](https://img.shields.io/npm/v/nd-txt)](https://www.npmjs.com/package/md-txt)
+
 Uses [`markdown-to-txt`](https://github.com/ejrbuss/markdown-to-txt) by [@ejrbuss](https://github.com/ejrbuss) to create a cli that converts markdown to text
 
 ```
