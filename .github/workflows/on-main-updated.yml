@@ -1,0 +1,41 @@
+name: On main updated
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+jobs:
+    release:
+        name: Release
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v3
+              with:
+                  persist-credentials: false
+            - name: Install Node and Restore Cache
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+                  check-latest: true
+                  cache: 'npm'
+                  cache-dependency-path: 'package-lock.json'
+            - name: Install Dependencies
+              run: npm ci --ignore-scripts || npm i  --ignore-scripts
+            - name: Run Snyk to check for vulnerabilities
+              uses: snyk/actions/node@master
+              env:
+                  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+              with:
+                  command: test
+            - name: Build
+              run: npm run build
+            - name: Basic success
+              run: node dist/cli.js README.md README.txt
+            - name: Force overwrite
+              run: node dist/cli.js --force README.md README.txt
+            - name: Release
+              run: npx semantic-release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,31 @@
+{
+    "branches": [
+        "main"
+    ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            [
+                "@semantic-release/github",
+                {
+                    "successComment": true,
+                    "assignees": false,
+                    "releasedLabels": true,
+                    "assets": [
+                        {
+                            "path": "dist/cli.js",
+                            "label": "cli.js"
+                        }
+                    ]
+                }
+            ],
+            "@semantic-release/changelog",
+            "@semantic-release/git",
+            [
+                "@semantic-release/npm",
+                {
+                    "npmPublish": true,
+                }
+            ],
+        ]
+}
