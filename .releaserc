@@ -8,9 +8,9 @@
             [
                 "@semantic-release/github",
                 {
-                    "successComment": true,
+                    "successComment": "released!",
                     "assignees": false,
-                    "releasedLabels": true,
+                    "releasedLabels": "released",
                     "assets": [
                         {
                             "path": "dist/cli.js",
