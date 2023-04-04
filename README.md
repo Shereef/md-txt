@@ -28,7 +28,7 @@ I wanted to use this to sanitize release notes going from github to stackholders
 
 ## Contributing
 
-Please read our [contribution guide](./CONTRIBUTING.md).
+Please read our [contribution guide](./CONTRIBUTING.md)
 
 ## Release Notes
 
