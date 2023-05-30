@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/shereef/md-txt/compare/v1.0.1...v1.0.2) (2023-05-30)
+
+
+### Performance Improvements
+
+* updated meow from 11.0.0 to 12.0.1 ([#86](https://github.com/shereef/md-txt/issues/86)) ([0afdcb9](https://github.com/shereef/md-txt/commit/0afdcb9edfdbf4cb3eddc30e7087173baa6f66f4))
+
 ## [1.0.1](https://github.com/shereef/md-txt/compare/v1.0.0...v1.0.1) (2023-04-04)
 
 
