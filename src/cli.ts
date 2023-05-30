@@ -20,12 +20,12 @@ export const cli = meow.default(
         flags: {
             force: {
                 type: 'boolean',
-                alias: 'f',
+                shortFlag: 'f',
                 default: false,
             },
             verbose: {
                 type: 'boolean',
-                alias: 'v',
+                shortFlag: 'v',
                 default: false,
             },
         },
