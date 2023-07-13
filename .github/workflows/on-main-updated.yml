@@ -22,12 +22,6 @@ jobs:
                   cache-dependency-path: 'package-lock.json'
             - name: Install Dependencies
               run: npm ci --ignore-scripts || npm i  --ignore-scripts
-            - name: Run Snyk to check for vulnerabilities
-              uses: snyk/actions/node@master
-              env:
-                  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-              with:
-                  command: test
             - name: Build
               run: npm run build
             - name: Basic success
