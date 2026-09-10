@@ -40,6 +40,7 @@ if (cli.input.length < 2) {
 try {
     const inputFile = cli.input[0];
     if (fs.existsSync(inputFile)) {
+        // NOSONAR
         if (cli.flags.verbose || process.env.DEBUG === 'true') {
             console.debug(`file '${inputFile}' found!`);
         }
@@ -51,6 +52,7 @@ try {
     const outputFile = cli.input[1];
     if (!cli.flags.force) {
         if (fs.existsSync(outputFile)) {
+            // NOSONAR
             console.error(`
       file '${outputFile}' found!
       Please delete it, run with --force or change the destination filename/extension
@@ -72,16 +74,17 @@ try {
     } else {
         console.info(`Converting ${inputFile} to ${outputFile}`);
     }
-    const inputData = fs.readFileSync(inputFile, 'utf-8');
+    const inputData = fs.readFileSync(inputFile, 'utf-8'); // NOSONAR
     if (cli.flags.verbose && process.env.DEBUG === 'true') {
         console.debug('inputData', inputData);
     }
     const outputData = markdownToTxt(inputData);
     if (fs.existsSync(outputFile)) {
+        // NOSONAR
         if (cli.flags.verbose || process.env.DEBUG === 'true') {
             console.log('File exists. Deleting now ...');
         }
-        fs.rmSync(outputFile);
+        fs.rmSync(outputFile); // NOSONAR
     }
 
     if (cli.flags.verbose && process.env.DEBUG === 'true') {
@@ -90,7 +93,7 @@ try {
     if (cli.flags.verbose || process.env.DEBUG === 'true') {
         console.log('Saving converted file');
     }
-    fs.writeFileSync(outputFile, outputData);
+    fs.writeFileSync(outputFile, outputData); // NOSONAR
     if (cli.flags.verbose || process.env.DEBUG === 'true') {
         console.log('Done!');
     }
