@@ -8,7 +8,6 @@ updates:
           prefix: 'chore(github-actions)'
       open-pull-requests-limit: 100
 
-
     - package-ecosystem: 'npm'
       directory: '/'
       schedule:
