@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Shereef/md-txt/compare/v1.0.3...v1.0.4) (2026-09-14)
+
+
+### Bug Fixes
+
+* match repository url case for npm provenance ([8824081](https://github.com/Shereef/md-txt/commit/88240818ccbc55a6d227ea7e4158dd25bee82c6b))
+
 ## [1.0.3](https://github.com/shereef/md-txt/compare/v1.0.2...v1.0.3) (2026-09-14)
 
 
