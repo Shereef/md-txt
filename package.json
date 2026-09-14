@@ -56,7 +56,8 @@
     },
     "homepage": "https://github.com/Shereef/md-txt#readme",
     "publishConfig": {
-        "access": "public"
+        "access": "public",
+        "provenance": true
     },
     "dependencies": {
         "lodash": "^4.18.1",
