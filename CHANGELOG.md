@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/Shereef/md-txt/compare/v1.0.6...v1.0.7) (2026-09-14)
+
+
+### Bug Fixes
+
+* resolve remaining sonarcloud code scanning alerts ([78ef56b](https://github.com/Shereef/md-txt/commit/78ef56bdc971f88f77fd761e4c91dd2a7556281c))
+
 ## [1.0.6](https://github.com/Shereef/md-txt/compare/v1.0.5...v1.0.6) (2026-09-14)
 
 
