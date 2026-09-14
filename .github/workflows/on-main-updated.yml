@@ -5,6 +5,8 @@ on:
         branches:
             - main
 
+permissions: read-all
+
 jobs:
     release:
         name: Release
@@ -35,6 +37,6 @@ jobs:
             - name: Force overwrite
               run: node dist/cli.js --force README.md README.txt
             - name: Release
-              run: npx semantic-release
+              run: npm run semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
