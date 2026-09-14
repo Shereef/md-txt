@@ -5,16 +5,15 @@ on:
         branches:
             - main
 
-permissions:
-    contents: write
-    issues: write
-    pull-requests: write
-    id-token: write
-
 jobs:
     release:
         name: Release
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            issues: write
+            pull-requests: write
+            id-token: write
         steps:
             - name: Checkout the repository
               uses: actions/checkout@v7
@@ -28,7 +27,7 @@ jobs:
                   cache: 'npm'
                   cache-dependency-path: 'package-lock.json'
             - name: Install Dependencies
-              run: npm ci --ignore-scripts || npm i  --ignore-scripts
+              run: npm ci --ignore-scripts
             - name: Build
               run: npm run build
             - name: Basic success

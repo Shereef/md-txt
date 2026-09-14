@@ -5,16 +5,15 @@ on:
         branches:
             - main
 
-permissions:
-    pull-requests: write
-    contents: write
-    issues: write
-    repository-projects: write
-
 jobs:
     run:
         name: Quality gate
         runs-on: ubuntu-latest
+        permissions:
+            pull-requests: write
+            contents: write
+            issues: write
+            repository-projects: write
         steps:
             - name: Checkout the repository
               uses: actions/checkout@v7
@@ -28,7 +27,7 @@ jobs:
                   cache: 'npm'
                   cache-dependency-path: 'package-lock.json'
             - name: Install Dependencies
-              run: npm ci --ignore-scripts || npm i  --ignore-scripts
+              run: npm ci --ignore-scripts
             - name: Build
               run: npm run build
             - name: Basic success
@@ -39,6 +38,9 @@ jobs:
     dependabot:
         continue-on-error: true
         runs-on: ubuntu-latest
+        permissions:
+            pull-requests: write
+            contents: write
         if: ${{ github.actor == 'dependabot[bot]' }}
         steps:
             - name: Dependabot metadata
@@ -68,6 +70,9 @@ jobs:
     auto-merge:
         continue-on-error: true
         runs-on: ubuntu-latest
+        permissions:
+            pull-requests: write
+            contents: write
         if: ${{ github.event.pull_request.draft == false }}
         steps:
             - name: Enable auto-merge for this PR
