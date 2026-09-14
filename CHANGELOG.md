@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/Shereef/md-txt/compare/v1.0.4...v1.0.5) (2026-09-14)
+
+
+### Bug Fixes
+
+* trigger release to sync npm with github ([acc9d45](https://github.com/Shereef/md-txt/commit/acc9d455c96f438b80f17adecd3b882b22012fb4))
+
 ## [1.0.4](https://github.com/Shereef/md-txt/compare/v1.0.3...v1.0.4) (2026-09-14)
 
 
