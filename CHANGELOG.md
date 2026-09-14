@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/Shereef/md-txt/compare/v1.0.7...v1.0.8) (2026-09-14)
+
+
+### Bug Fixes
+
+* replace read-all permissions with explicit contents read to resolve S8234 ([31d16e1](https://github.com/Shereef/md-txt/commit/31d16e1234718b502bf3adabfdfa43dab71f7b93))
+
 ## [1.0.7](https://github.com/Shereef/md-txt/compare/v1.0.6...v1.0.7) (2026-09-14)
 
 
