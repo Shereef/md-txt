@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/Shereef/md-txt/compare/v1.0.5...v1.0.6) (2026-09-14)
+
+
+### Bug Fixes
+
+* resolve security alerts and code scanning issues ([1a05920](https://github.com/Shereef/md-txt/commit/1a05920520570479d5849611aff04c8188229524))
+
 ## [1.0.5](https://github.com/Shereef/md-txt/compare/v1.0.4...v1.0.5) (2026-09-14)
 
 
