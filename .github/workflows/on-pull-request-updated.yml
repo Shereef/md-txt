@@ -54,7 +54,7 @@ jobs:
                   PR_URL: ${{github.event.pull_request.html_url}}
             - name: Add a label for all major updates
               continue-on-error: true
-              if: ${{ steps.dependabot-metadata.outputs.update-type == 'version-update:semver-major' }}
+              if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-major' }}
               run: gh pr edit "$PR_URL" --add-label "major"
               env:
                   PR_URL: ${{github.event.pull_request.html_url}}
