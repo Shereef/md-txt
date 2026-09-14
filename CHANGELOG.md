@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/shereef/md-txt/compare/v1.0.2...v1.0.3) (2026-09-14)
+
+
+### Bug Fixes
+
+* resolve build and sonarqube errors ([4733afb](https://github.com/shereef/md-txt/commit/4733afb25c822e230303fab4c9a3e42e7c671957))
+
 ## [1.0.2](https://github.com/shereef/md-txt/compare/v1.0.1...v1.0.2) (2023-05-30)
 
 
